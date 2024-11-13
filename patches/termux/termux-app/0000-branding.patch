@@ -1,0 +1,34 @@
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -38,7 +38,7 @@ android {
+     }
+ 
+     defaultConfig {
+-        applicationId "com.termux"
++        applicationId "org.sasha0552.kaneko"
+         minSdkVersion project.properties.minSdkVersion.toInteger()
+         targetSdkVersion project.properties.targetSdkVersion.toInteger()
+         versionCode 118
+@@ -49,14 +49,14 @@ android {
+ 
+         buildConfigField "String", "TERMUX_PACKAGE_VARIANT", "\"" + project.ext.packageVariant + "\"" // Used by TermuxApplication class
+ 
+-        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.termux"
+-        manifestPlaceholders.TERMUX_APP_NAME = "Termux"
+-        manifestPlaceholders.TERMUX_API_APP_NAME = "Termux:API"
+-        manifestPlaceholders.TERMUX_BOOT_APP_NAME = "Termux:Boot"
+-        manifestPlaceholders.TERMUX_FLOAT_APP_NAME = "Termux:Float"
+-        manifestPlaceholders.TERMUX_STYLING_APP_NAME = "Termux:Styling"
+-        manifestPlaceholders.TERMUX_TASKER_APP_NAME = "Termux:Tasker"
+-        manifestPlaceholders.TERMUX_WIDGET_APP_NAME = "Termux:Widget"
++        manifestPlaceholders.TERMUX_PACKAGE_NAME = "org.sasha0552.kaneko"
++        manifestPlaceholders.TERMUX_APP_NAME = "KanekoProject"
++        manifestPlaceholders.TERMUX_API_APP_NAME = "KanekoProject:API"
++        manifestPlaceholders.TERMUX_BOOT_APP_NAME = "KanekoProject:Boot"
++        manifestPlaceholders.TERMUX_FLOAT_APP_NAME = "KanekoProject:Float"
++        manifestPlaceholders.TERMUX_STYLING_APP_NAME = "KanekoProject:Styling"
++        manifestPlaceholders.TERMUX_TASKER_APP_NAME = "KanekoProject:Tasker"
++        manifestPlaceholders.TERMUX_WIDGET_APP_NAME = "KanekoProject:Widget"
+ 
+         externalNativeBuild {
+             ndkBuild {

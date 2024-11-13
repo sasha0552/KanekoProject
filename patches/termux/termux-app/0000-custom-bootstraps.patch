@@ -1,0 +1,9 @@
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -233,6 +233,5 @@ task downloadBootstraps() {
+ 
+ afterEvaluate {
+     android.applicationVariants.all { variant ->
+-        variant.javaCompileProvider.get().dependsOn(downloadBootstraps)
+     }
+ }
